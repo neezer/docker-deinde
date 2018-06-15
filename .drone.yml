@@ -1,0 +1,9 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: neezer/deinde
+    secrets: [ docker_username, docker_password ]
+    auto_tag: true
+    when:
+      branch: master
+
